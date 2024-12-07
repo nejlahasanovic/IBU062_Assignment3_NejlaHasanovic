@@ -29,3 +29,18 @@
    - IP (Server2): 210.3.14.4 (on Switch2)
 
 [Link to my github repository](https://github.com/nejlahasanovic/IBU062_Assignment3_NejlaHasanovic.git)
+
+## DHCP commands
+1. **DHCP commands and steps i used for configuration**
+   
+   ```bash
+   ip dhcp pool MYPOOL1 "I created a DHCP pool named MYPOOL1. This pool is responsible for assigning IP addresses to devices connected to the first network (168.90.0.0/16)"
+   network 168.90.0.0 255.255.0.0 "I specified the network range for MYPOOL1. Devices on this network will receive IP addresses from the 168.90.0.0/16 range"
+   default-router 168.90.0.1 "I set the default gateway for this network to 168.90.0.1. Devices will use this IP address to communicate with other networks."
+   exit "After completing the configuration for MYPOOL1, I exited the pool setup."
+   
+   
+   ip dhcp pool MYPOOL2 "I created a second DHCP pool named MYPOOL2. This pool assigns IP addresses to devices connected to the second network (210.3.14.0/24)."
+   network 210.3.14.0 255.255.255.0 "I defined the network range for MYPOOL2. Devices on this network will receive IP addresses from the 210.3.14.0/24 range."
+   default-router 210.3.14.1 "I set the default gateway for the second network to 210.3.14.1, enabling devices to communicate outside their local network."
+   exit "I exited the setup after completing the configuration for MYPOOL2."
