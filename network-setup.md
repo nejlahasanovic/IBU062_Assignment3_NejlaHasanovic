@@ -10,11 +10,13 @@
    - Quantity: 2
    - Model: 2960-24TT
 3. ***PCs***
-   - Quantity: 3
+   - Quantity: 5
    - Model: PC-PT (generic pc)
    - IP (PC0): 168.90.0.2
    - IP (PC1): 168.90.0.3
    - IP (PC2): 210.3.14.2
+   - IP (PC3): (dodijeljena adresa preko dhcp 168.90.0.6)
+   - IP (PC4): (dodijeljena adresa preko dhcp 210.3.14.5)
 4. ***Laptop***
    - Quantity: 1
    - Model: Laptop-PT
@@ -26,4 +28,4 @@
    - IP (Server1): 210.3.14.3 (on Switch2)
    - IP (Server2): 210.3.14.4 (on Switch2)
 
-[Link to my github repository]()
+[Link to my github repository](https://github.com/nejlahasanovic/IBU062_Assignment3_NejlaHasanovic.git)
